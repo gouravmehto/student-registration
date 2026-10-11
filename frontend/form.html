@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration</title>
+</head>
+<body>
+    <h2>Student Registration Form</h2>
+    <form action="/save" method="POST" enctype="multipart/form-data">
+        <label>Name:</label>
+        <input type="text" name="name" required><br><br>
+
+        <label>Course:</label>
+        <select name="course" required>
+            <option value="">Select Course</option>
+            <option value="Python">Python</option>
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+            <option value="JavaScript">JavaScript</option>
+        </select><br><br>
+
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="Male"> Male
+        <input type="radio" name="gender" value="Female"> Female<br><br>
+
+        <label>Skills:</label>
+        <input type="checkbox" name="skills" value="HTML"> HTML
+        <input type="checkbox" name="skills" value="CSS"> CSS
+        <input type="checkbox" name="skills" value="Python"> Python<br><br>
+
+        <label>Upload File:</label>
+        <input type="file" name="file"><br><br>
+
+        <button type="submit">Save</button>
+    </form>
+
+    <br>
+    <a href="/students">View Saved Details</a>
+</body>
+</html>
